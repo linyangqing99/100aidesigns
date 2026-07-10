@@ -1,0 +1,12 @@
+{
+  "id": "001",
+  "slug": "001-lumen",
+  "name": "Lumen Micro Journey",
+  "status": "live",
+  "family": "immersive-experience",
+  "live_url": "https://lumen-image-reveal.sssansui66.chatgpt.site",
+  "detail_path": "/designs/001-lumen",
+  "tags": ["dark", "immersive", "editorial", "pointer-reveal", "emotional-reset"],
+  "source_reference": "https://21st.dev",
+  "license_note": "Original implementation and prompt. Distribution model inspiration credited to 21st.dev."
+}
