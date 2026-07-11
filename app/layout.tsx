@@ -19,12 +19,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = host.includes("localhost") ? "http" : "https";
   const origin = `${protocol}://${host}`;
   return {
-    title: "100 AI Designs — 100 种可运行的设计语言",
-    description: "用 AI 实现 100 种产品设计风格，并沉淀提示词、适用场景与可复用设计系统。",
+    title: "100 AI Designs — 100 Runnable Design Languages",
+    description: "One hundred AI-made product design languages, each shipped, decoded, and packaged for reuse.",
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
       title: "100 AI Designs",
-      description: "100 种设计语言，100 个可运行产品。",
+      description: "100 design languages. 100 runnable products.",
       images: [{ url: `${origin}/og.png`, width: 1744, height: 907, alt: "100 AI Designs" }],
     },
     twitter: { card: "summary_large_image", images: [`${origin}/og.png`] },
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
