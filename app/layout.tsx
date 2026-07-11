@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { headers } from "next/headers";
+import { Analytics } from "../components/Analytics";
 import "./globals.css";
+
+const productionOrigin = "https://100ai.design";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,23 +15,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("host") || "100aidesigns.com";
-  const protocol = host.includes("localhost") ? "http" : "https";
-  const origin = `${protocol}://${host}`;
-  return {
-    title: "100 AI Designs - 100 Runnable Design Languages",
-    description: "One hundred AI-made product design languages, each shipped, decoded, and packaged for reuse.",
-    icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
-    openGraph: {
-      title: "100 AI Designs",
-      description: "100 design languages. 100 runnable products.",
-      images: [{ url: `${origin}/og.png`, width: 1744, height: 907, alt: "100 AI Designs" }],
-    },
-    twitter: { card: "summary_large_image", images: [`${origin}/og.png`] },
-  };
-}
+export const metadata: Metadata = {
+  metadataBase: new URL(productionOrigin),
+  title: "100 AI Designs - 100 Runnable Design Languages",
+  description:
+    "One hundred AI-made product design languages, each shipped, decoded, and packaged for reuse.",
+  alternates: { canonical: "/" },
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  openGraph: {
+    title: "100 AI Designs",
+    description: "100 design languages. 100 runnable products.",
+    url: productionOrigin,
+    siteName: "100 AI Designs",
+    images: [
+      {
+        url: "/og.png",
+        width: 1744,
+        height: 907,
+        alt: "100 AI Designs",
+      },
+    ],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
+};
 
 export default function RootLayout({
   children,
@@ -42,6 +50,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

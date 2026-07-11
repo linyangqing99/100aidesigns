@@ -29,10 +29,12 @@ test("home and design detail render the shared collection shell", async () => {
 });
 
 test("the collection contract and local preview assets are present", async () => {
-  const [home, detail, chrome, css, system] = await Promise.all([
+  const [home, detail, chrome, analytics, layout, css, system] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/designs/001-lumen/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../components/SiteChrome.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../components/Analytics.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
     readFile(new URL("../docs/UI-SYSTEM.md", import.meta.url), "utf8"),
   ]);
@@ -42,6 +44,12 @@ test("the collection contract and local preview assets are present", async () =>
   assert.match(detail, /<DetailHeader/);
   assert.match(detail, /<DetailFooter/);
   assert.match(chrome, /INDEX ↓/);
+  assert.match(analytics, /plausible\.io\/js\/pa-UKHPOgtl5DpjdFoJV1-4s\.js/);
+  assert.match(analytics, /G-J1NT8LJ9JQ/);
+  assert.match(analytics, /xkt1ed2duv/);
+  assert.match(analytics, /googletagmanager\.com\/gtag\/js/);
+  assert.match(analytics, /clarity\.ms\/tag/);
+  assert.match(layout, /https:\/\/100ai\.design/);
   assert.match(system, /Status: normative/);
   assert.doesNotMatch(css, /https:\/\/images\.unsplash\.com/);
   await Promise.all([
