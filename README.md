@@ -9,4 +9,4 @@ The project is inspired by the discovery and distribution model of [21st.dev](ht
 - 001 Lumen Micro Journey — live
 - 002–100 — planned through a 10-family research matrix
 
-See `docs/ARCHITECTURE.md` and `docs/ROADMAP-100.md`.
+See `docs/UI-SYSTEM.md` for the enforced site-wide interface contract, plus `docs/ARCHITECTURE.md` and `docs/ROADMAP-100.md` for the product structure and release plan.

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { DesignEntry } from "../data/designs";
+import { SectionLabel } from "./SiteChrome";
 
 export function Catalog({ designs, families }: { designs: DesignEntry[]; families: string[] }) {
   const [family, setFamily] = useState("All");
@@ -14,7 +15,7 @@ export function Catalog({ designs, families }: { designs: DesignEntry[]; familie
 
   return (
     <section className="explore-section" id="explore">
-      <div className="section-label"><span>01</span><p>DESIGN LANGUAGE LIBRARY</p><b>{String(shown.length).padStart(2, "0")} / 100</b></div>
+      <SectionLabel title="DESIGN LANGUAGE LIBRARY" meta={`${String(shown.length).padStart(2, "0")} / 100`} />
       <div className="catalog-controls">
         <div className="family-tabs">{families.map((item) => <button type="button" key={item} className={family === item ? "active" : ""} onClick={() => setFamily(item)}>{item}</button>)}</div>
         <label className="search-box"><span>⌕</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search styles, use cases, or keywords" aria-label="Search designs" /></label>

@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = host.includes("localhost") ? "http" : "https";
   const origin = `${protocol}://${host}`;
   return {
-    title: "100 AI Designs — 100 Runnable Design Languages",
+    title: "100 AI Designs - 100 Runnable Design Languages",
     description: "One hundred AI-made product design languages, each shipped, decoded, and packaged for reuse.",
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
