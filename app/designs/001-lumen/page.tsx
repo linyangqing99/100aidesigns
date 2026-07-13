@@ -1,6 +1,8 @@
 import { CopyPrompt } from "../../../components/CopyPrompt";
 import { DetailFooter, DetailHeader, SectionLabel, SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 
+const LUMEN_LIVE_URL = "https://lumen.100ai.design";
+
 const prompt = `Design a dark, cinematic interactive micro-journey product.
 
 Product goal: help a user reset emotionally in sixty seconds by discovering a hidden landscape.
@@ -17,10 +19,10 @@ export default function LumenDesignPage() {
     <>
       <SiteHeader context="detail" />
       <main className="detail-page">
-        <DetailHeader designId="001" liveUrl="https://lumen-image-reveal.sssansui66.chatgpt.site" />
+        <DetailHeader designId="001" liveUrl={LUMEN_LIVE_URL} />
         <section className="detail-hero">
           <div className="detail-title"><p><span className="status-dot" /> LIVE · IMMERSIVE EXPERIENCE</p><h1>Lumen<br /><em>Micro Journey</em></h1><p>A sixty-second emotional reset built around discovering an unknown landscape with light. The reveal does more than decorate: it powers the explore, unlock, and take-away loop.</p></div>
-          <a className="lumen-showcase" href="https://lumen-image-reveal.sssansui66.chatgpt.site" target="_blank" rel="noreferrer">
+          <a className="lumen-showcase" href={LUMEN_LIVE_URL} target="_blank" rel="noreferrer">
             <div className="lumen-grid" /><div className="lumen-light" /><span>LUMEN</span><h2>Take one minute.<br />Go <em>somewhere else.</em></h2><b>ENTER EXPERIENCE ↗</b>
           </a>
         </section>
