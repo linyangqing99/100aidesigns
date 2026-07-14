@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs><linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07141a"/><stop offset="1" stop-color="#25343e"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <rect width="800" height="800" fill="url(#night)"/>
+  <path d="M0 0h290c70 145 30 244-98 340C79 425 61 559 160 800H0z" fill="#02080a"/>
+  <path d="M800 0H555c-55 145-16 252 94 337 114 87 124 231 25 463h126z" fill="#050a0d"/>
+  <path d="M297 0c17 209 84 325 192 424 78 72 89 198 25 376H250c99-173 93-295-5-390C128 297 155 142 219 0z" fill="#21b4d0" opacity=".42" filter="url(#glow)"/>
+  <path d="M325 0c4 196 66 318 173 417 81 75 87 199 30 383H302c90-178 78-293-16-389C182 304 196 159 252 0z" fill="#5ce4ef"/>
+  <g fill="#d7e6e5" opacity=".75"><circle cx="405" cy="118" r="5"/><circle cx="470" cy="251" r="3"/><circle cx="350" cy="590" r="4"/><circle cx="435" cy="682" r="2"/></g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eee6d3"/><stop offset="1" stop-color="#b9976b"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#room)"/>
+  <rect x="72" y="64" width="656" height="430" fill="#b8d2ce" stroke="#4b4135" stroke-width="16"/>
+  <g stroke="#4b4135" stroke-width="12"><path d="M290 64v430M510 64v430M72 270h656"/></g>
+  <path d="M0 520h800v280H0z" fill="#8b6e4e"/><path d="M0 612h800" stroke="#e7d5b7" stroke-width="7" opacity=".55"/>
+  <rect x="130" y="430" width="348" height="128" rx="9" fill="#e6d3aa" stroke="#4b4135" stroke-width="9"/>
+  <path d="M180 558v183M428 558v183" stroke="#4b4135" stroke-width="14"/>
+  <path d="M590 350v260" stroke="#2b2a26" stroke-width="17"/><path d="M510 348h162c0-77-34-128-81-128s-81 51-81 128z" fill="#2b2a26"/><ellipse cx="591" cy="350" rx="70" ry="28" fill="#f3d591"/>
+</svg>

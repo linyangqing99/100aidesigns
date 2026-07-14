@@ -1,0 +1,12 @@
+{
+  "id": "002",
+  "slug": "002-tasteprint",
+  "name": "Tasteprint Visual Direction Lab",
+  "status": "live",
+  "family": "immersive-experience",
+  "live_url": "https://tasteprint.100ai.design",
+  "detail_path": "/designs/002-tasteprint",
+  "tags": ["visual-taste", "selection", "editorial", "focus-blur", "creative-direction"],
+  "source_reference": "https://21st.dev",
+  "license_note": "Original product, local artwork, implementation, and prompt. Distribution model inspiration credited to 21st.dev."
+}

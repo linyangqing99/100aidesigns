@@ -42,7 +42,7 @@ export default function Home() {
 
         <section className="manifesto"><p>THE GOAL IS NOT ONE HUNDRED PRETTY PAGES.</p><h2>A living library of design languages<br /><em>AI can call directly.</em></h2><a href="#explore">EXPLORE THE LIBRARY ↓</a></section>
       </main>
-      <SiteFooter progressText="001 / 100 · OPEN DESIGN LAB · 2026" />
+      <SiteFooter progressText="002 / 100 · OPEN DESIGN LAB · 2026" />
     </>
   );
 }

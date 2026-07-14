@@ -104,6 +104,9 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
 .preview-title strong { font-size: clamp(21px, 2.3vw, 38px); font-weight: 450; letter-spacing: -.055em; line-height: .95; }
 .preview-lumen { color: #efeee7; background: radial-gradient(circle at 68% 42%, transparent 0 13%, rgba(10,13,13,.4) 29%, #090b0b 48%), url("/previews/lumen.webp") center/cover; }
 .preview-lumen::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 22px 22px; }
+.preview-tasteprint { color: #171914; background: #eef0e9 url("/previews/tasteprint.svg") center/cover; }
+.preview-tasteprint .preview-title { top: auto; bottom: 14%; width: auto; padding: 9px 12px; border: 1px solid #171914; background: rgba(244,243,236,.9); transform: translateX(-50%); }
+.preview-tasteprint .preview-title strong { font-family: Georgia, serif; font-weight: 400; }
 .preview-editorial { background: #eee8dc; }
 .preview-editorial .preview-title { border-left: 9px solid #d6422b; padding-left: 13px; }
 .preview-editorial .preview-title strong { font-family: Georgia, serif; font-weight: 400; }
@@ -180,6 +183,27 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
 .lumen-showcase h2 { position: absolute; left: 7%; bottom: 12%; margin: 0; font-size: clamp(38px,4vw,68px); font-weight: 350; letter-spacing: -.07em; line-height: .9; }
 .lumen-showcase h2 em { color: var(--lime); font-family: Georgia,serif; font-weight: 400; }
 .lumen-showcase > b { position: absolute; right: 22px; bottom: 20px; color: #d3d7d0; font-family: var(--font-geist-mono), monospace; font-size: 10px; font-weight: 500; letter-spacing: .1em; }
+.tasteprint-showcase { position: relative; display: block; aspect-ratio: 16/10; overflow: hidden; border: 1px solid #171914; color: #171914; text-decoration: none; background: #eef0e9 url("/previews/tasteprint.svg") center/cover; }
+.detail-hero .tasteprint-showcase { align-self: center; margin-left: 14px; }
+.tasteprint-showcase::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(238,240,233,.04), rgba(238,240,233,.2)); }
+.tasteprint-showcase-copy { position: absolute; z-index: 5; inset: 0; display: flex; flex-direction: column; padding: clamp(18px, 3vw, 38px); }
+.tasteprint-showcase-copy > span { font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .14em; }
+.tasteprint-showcase-copy h2 { max-width: 62%; margin: auto 0 0; font-family: Georgia, serif; font-size: clamp(30px, 3.5vw, 58px); font-weight: 400; letter-spacing: -.06em; line-height: .87; }
+.tasteprint-showcase-copy h2 em { color: #f14b24; font-weight: 400; }
+.tasteprint-showcase-copy > b { align-self: flex-end; margin-top: 22px; padding-bottom: 4px; border-bottom: 1px solid currentColor; font-family: var(--font-geist-mono), monospace; font-size: 9px; font-weight: 500; letter-spacing: .1em; }
+.tasteprint-mini-card, .tasteprint-result-card { position: absolute; z-index: 3; display: flex; flex-direction: column; border: 1px solid #171914; box-shadow: 6px 6px 0 rgba(23,25,20,.12); }
+.tasteprint-mini-card { width: 18%; aspect-ratio: 1; justify-content: space-between; padding: 9px; color: white; background-position: center; background-size: cover; }
+.tasteprint-mini-card span, .tasteprint-result-card small { font-family: var(--font-geist-mono), monospace; font-size: 7px; letter-spacing: .1em; }
+.tasteprint-mini-card b { font-family: Georgia, serif; font-size: clamp(9px, 1vw, 16px); font-weight: 400; }
+.tasteprint-card-a { top: 14%; right: 7%; background: linear-gradient(145deg,#c8cec6,#59675e); transform: rotate(5deg); }
+.tasteprint-card-b { right: 30%; bottom: 8%; background: linear-gradient(145deg,#f0d7d3,#a8405e); transform: rotate(-4deg); }
+.tasteprint-card-c { right: 3%; bottom: 10%; background: linear-gradient(145deg,#07141a,#21b4d0); transform: rotate(2deg); }
+.tasteprint-result-card { z-index: 4; top: 26%; right: 25%; width: 19%; aspect-ratio: 1; padding: 10px; background: #f14b24; color: white; transform: rotate(-2deg); }
+.tasteprint-result-card strong { margin: auto 0; font-family: Georgia, serif; font-size: clamp(35px, 4vw, 68px); font-weight: 400; line-height: .8; }
+.tasteprint-result-card strong em { font-family: var(--font-geist-mono), monospace; font-size: .25em; font-style: normal; }
+.tasteprint-result-card p { margin: 0; font-family: var(--font-geist-mono), monospace; font-size: 7px; }
+.tasteprint-dna article:nth-child(1) { background: #f14b24; color: #fff8ee; }
+.tasteprint-dna article:nth-child(2) { background: #171914; color: #f3f0e8; }
 .detail-page .section-label { border-color: var(--ink); }
 .dna-grid { display: grid; grid-template-columns: repeat(12,1fr); margin-top: 42px; border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
 .dna-grid article { min-height: 210px; padding: 24px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
@@ -225,7 +249,7 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
   .detail-hero, .prompt-layout { grid-template-columns: 1fr; }
   .detail-hero { padding-top: 90px; }
   .detail-title { min-height: 480px; padding-right: 0; padding-bottom: 34px; border-right: 0; border-bottom: 1px solid var(--ink); }
-  .detail-hero .lumen-showcase { margin: 14px 0 0; }
+  .detail-hero .lumen-showcase, .detail-hero .tasteprint-showcase { margin: 14px 0 0; }
 }
 @media (max-width: 680px) {
   :root { --gutter: 18px; --header-height: 68px; }
@@ -255,7 +279,13 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
   .detail-hero { padding: 60px 18px; }
   .detail-title { min-height: 400px; }
   .detail-title h1 { font-size: 17vw; }
-  .lumen-showcase { aspect-ratio: 4/5; }
+  .lumen-showcase, .tasteprint-showcase { aspect-ratio: 4/5; }
+  .tasteprint-showcase-copy h2 { max-width: 78%; font-size: 11vw; }
+  .tasteprint-mini-card { width: 28%; }
+  .tasteprint-card-a { top: 19%; }
+  .tasteprint-card-b { right: 40%; bottom: 13%; }
+  .tasteprint-card-c { bottom: 16%; }
+  .tasteprint-result-card { top: 38%; right: 16%; width: 29%; }
   .source-note { grid-template-columns: 1fr; gap: 15px; padding: 38px 18px; }
   .detail-footer { min-height: 72px; padding: 0 var(--gutter); }
   .detail-footer span:last-child { display: none; }

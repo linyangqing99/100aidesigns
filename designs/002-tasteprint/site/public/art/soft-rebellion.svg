@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs><radialGradient id="bg"><stop stop-color="#f5ded8"/><stop offset="1" stop-color="#a8405e"/></radialGradient><filter id="soft"><feGaussianBlur stdDeviation="3"/></filter></defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <g fill="none" stroke="#593043" stroke-width="11" opacity=".72"><path d="M130 800C185 530 290 390 480 170"/><path d="M360 800C370 515 530 340 700 210"/><path d="M620 800C560 585 585 430 648 335"/></g>
+  <g filter="url(#soft)">
+    <g transform="translate(480 170)"><circle r="58" fill="#77233f"/><g fill="#f3a8b6"><ellipse rx="62" ry="125" transform="translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(72) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(144) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(216) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(288) translate(0 -86)"/></g></g>
+    <g transform="translate(220 455) scale(.72)"><circle r="58" fill="#8d3049"/><g fill="#f4c6c1"><ellipse rx="62" ry="125" transform="translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(72) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(144) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(216) translate(0 -86)"/><ellipse rx="62" ry="125" transform="rotate(288) translate(0 -86)"/></g></g>
+    <circle cx="650" cy="430" r="112" fill="#e9a5b0" opacity=".78"/>
+  </g>
+</svg>
