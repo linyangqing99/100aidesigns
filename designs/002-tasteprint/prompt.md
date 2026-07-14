@@ -1,5 +1,8 @@
 # Tasteprint style prompt
 
+Version: 0.1.0
+Status: documented against the shipped product; blind reproduction test pending
+
 Design an editorial visual-direction product that turns instinctive image choices into a usable creative brief.
 
 - **Product goal:** help a founder, designer, or creator articulate visual taste without needing design vocabulary.

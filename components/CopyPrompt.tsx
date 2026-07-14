@@ -2,8 +2,20 @@
 
 import { useState } from "react";
 
-export function CopyPrompt({ prompt }: { prompt: string }) {
-  const [copied, setCopied] = useState(false);
+type CopyPromptProps = {
+  prompt: string;
+  idleLabel?: string;
+  copiedLabel?: string;
+  errorLabel?: string;
+};
+
+export function CopyPrompt({
+  prompt,
+  idleLabel = "COPY PROMPT",
+  copiedLabel = "COPIED ✓",
+  errorLabel = "COPY FAILED · TRY AGAIN",
+}: CopyPromptProps) {
+  const [state, setState] = useState<"idle" | "copied" | "error">("idle");
   const copy = async () => {
     const textArea = document.createElement("textarea");
     textArea.value = prompt;
@@ -22,9 +34,14 @@ export function CopyPrompt({ prompt }: { prompt: string }) {
         didCopy = false;
       }
     }
-    if (!didCopy) return;
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1800);
+    if (!didCopy) {
+      setState("error");
+      window.setTimeout(() => setState("idle"), 2400);
+      return;
+    }
+    setState("copied");
+    window.setTimeout(() => setState("idle"), 1800);
   };
-  return <button type="button" className="copy-button" onClick={copy}>{copied ? "COPIED ✓" : "COPY PROMPT"}</button>;
+  const label = state === "copied" ? copiedLabel : state === "error" ? errorLabel : idleLabel;
+  return <button type="button" className="copy-button" data-copy-state={state} onClick={copy}>{label}</button>;
 }

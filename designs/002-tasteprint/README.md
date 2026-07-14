@@ -2,6 +2,12 @@
 
 Tasteprint helps people who can recognize a visual direction but cannot yet name it. The user chooses three images by instinct; the product translates their overlap into traits, a palette, composition rules, motion guidance, and a reusable AI creative prompt.
 
+## Source transformation
+
+The starting point was an owner-supplied external React, shadcn, and Tailwind gallery component attributed to 21st.dev. Its signature behavior enlarges the active image while non-active cards blur and fade. The exact component-page URL was not retained and remains pending.
+
+Tasteprint preserves that attention hierarchy, then adds a three-choice constraint, selection order, shuffle, a deterministic direction sheet, local artwork, keyboard and touch behavior, and a copyable downstream prompt.
+
 ## Product loop
 
 1. Browse or shuffle eight local visual studies.

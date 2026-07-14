@@ -253,11 +253,16 @@ Every design detail page must include:
 1. Shared site header.
 2. Detail context bar with design ID and live URL.
 3. Product thesis and bounded live showcase.
-4. Style DNA.
-5. Reusable prompt with a working copy action.
-6. Recommended and unsuitable use cases.
-7. Source/reference note, including 21st.dev when its distribution model is referenced.
-8. Detail footer and shared site footer.
+4. Product Model: starting problem, product promise, concrete outcome, and the four-step user loop.
+5. Style DNA: visual and behavioral rules observed in the shipped product.
+6. Source & Prompt: the original input, optimized prompt, transformation notes, working copy actions, prompt version, and validation state.
+7. When to Use: recommended and unsuitable use cases.
+8. Evidence & Reuse: implementation checks, prompt-test status, provenance, and reuse boundary.
+9. Detail footer and shared site footer.
+
+The original input may be a component, product brief, screenshot, or other reference artifact. Label its type and provenance truthfully; do not force every study into the same source story. When an external component is involved, show a concise excerpt rather than republishing the complete artifact, link the exact source and license when known, and mark missing source details as pending instead of guessing.
+
+The optimized prompt must be versioned. It may be marked as documented once it matches the shipped product, but it must not be described as validated until a blind reproduction test has generated a new implementation without access to the reference implementation and checked it against the stated product contract.
 
 Copy should be concrete and testable. Replace vague adjectives with composition, type, color, motion, density, interaction, and anti-pattern decisions.
 
@@ -273,6 +278,8 @@ Before a page is shipped, verify all of the following:
 - [ ] Only token values are used for shell colors and spacing.
 - [ ] Borders remain 1px and square; no shell shadows, pills, or decorative gradients were added.
 - [ ] All page copy is English.
+- [ ] Original input, source attribution, transformation notes, and reuse boundary are present and accurate.
+- [ ] Optimized prompt shows a version and an honest validation state.
 - [ ] Hover, focus, disabled, loading, success, and error states are designed where relevant.
 - [ ] Keyboard flow and visible focus are verified.
 - [ ] Images are local, load successfully, have correct alt text, and do not shift layout.

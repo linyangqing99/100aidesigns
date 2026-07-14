@@ -2,6 +2,12 @@
 
 The first production study in 100 AI Designs. Lumen turns a pointer-following image-reveal effect into a small product loop: choose a mood, explore an unknown landscape, unlock the destination, save a postcard, and continue.
 
+## Source transformation
+
+The starting point was an owner-supplied external React and Tailwind image-reveal component attributed to 21st.dev. Its signature behavior is a responsive, inertial pointer light cutting through a blurred dark mask. The exact component-page URL was not retained and remains pending.
+
+Lumen preserves that interaction physics, then adds an emotional entry point, nine destinations, exploration progress, earned context, postcard download, quote copy, and continuation.
+
 ## Files
 
 - `manifest.json`: machine-readable registry entry

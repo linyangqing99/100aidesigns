@@ -7,6 +7,11 @@
   "live_url": "https://lumen.100ai.design",
   "detail_path": "/designs/001-lumen",
   "tags": ["dark", "immersive", "editorial", "pointer-reveal", "emotional-reset"],
+  "source_type": "owner-supplied-component",
+  "source_attribution": "21st.dev",
+  "source_url_status": "exact-component-url-pending",
+  "prompt_version": "0.1.0",
+  "prompt_status": "draft-blind-test-pending",
   "source_reference": "https://21st.dev",
-  "license_note": "Original implementation and prompt. Distribution model inspiration credited to 21st.dev."
+  "license_note": "The external image-reveal component is attributed to 21st.dev; exact component URL pending. Product loop, implementation, destination content, and optimized prompt were created for this study."
 }

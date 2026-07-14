@@ -25,11 +25,18 @@ test("home and both live design details render the collection shell", async () =
   assert.match(home, /href="\/designs\/002-tasteprint"/);
   assert.match(home, /Tasteprint/);
   for (const detail of [lumen, tasteprint]) {
+    assert.match(detail, /PRODUCT MODEL/);
     assert.match(detail, /STYLE DNA/);
-    assert.match(detail, /REUSABLE PROMPT/);
+    assert.match(detail, /SOURCE &amp; PROMPT/);
+    assert.match(detail, /ORIGINAL INPUT/);
+    assert.match(detail, /OPTIMIZED PROMPT/);
     assert.match(detail, /WHEN TO USE/);
+    assert.match(detail, /EVIDENCE &amp; REUSE/);
+    assert.match(detail, /BLIND REPRODUCTION PENDING/);
     assert.match(detail, /OPEN LIVE EXPERIENCE/);
   }
+  assert.match(lumen, /ImageHover/);
+  assert.match(tasteprint, /InteractiveImageGallery/);
   assert.match(tasteprint, /tasteprint\.100ai\.design/);
 });
 
@@ -55,6 +62,10 @@ test("002 has a complete registry, documentation, standalone site, and local ass
     { id: manifest.id, slug: manifest.slug, status: manifest.status, live_url: manifest.live_url, detail_path: manifest.detail_path },
     { id: "002", slug: "002-tasteprint", status: "live", live_url: "https://tasteprint.100ai.design", detail_path: "/designs/002-tasteprint" },
   );
+  assert.equal(manifest.source_type, "owner-supplied-component");
+  assert.equal(manifest.source_attribution, "21st.dev");
+  assert.equal(manifest.source_url_status, "exact-component-url-pending");
+  assert.equal(manifest.prompt_status, "draft-blind-test-pending");
   assert.match(registry, /id: "002".*status: "live".*href: "\/designs\/002-tasteprint"/);
   assert.match(prompt, /Product goal/);
   assert.match(prompt, /Use cases/);
@@ -64,6 +75,9 @@ test("002 has a complete registry, documentation, standalone site, and local ass
   assert.match(detail, /<DetailHeader designId="002"/);
   assert.match(detail, /<DetailFooter designId="002"/);
   assert.match(detail, /<SiteFooter progressText="002 \/ 100/);
+  assert.match(detail, /OWNER-SUPPLIED COMPONENT/);
+  assert.match(detail, /InteractiveImageGallery/);
+  assert.match(detail, /Result: combine the selected cards/);
   assert.doesNotMatch(standalone, /images\.unsplash\.com/);
   assert.match(css, /preview-tasteprint/);
   assert.match(sitemap, /designs\/002-tasteprint/);
@@ -74,6 +88,25 @@ test("002 has a complete registry, documentation, standalone site, and local ass
     access(new URL("../designs/002-tasteprint/site/package.json", import.meta.url)),
     ...assetNames.map((name) => access(new URL(`../designs/002-tasteprint/site/public/art/${name}.svg`, import.meta.url))),
   ]);
+});
+
+test("001 records the external source, optimized prompt state, and verified take-away actions", async () => {
+  const [manifestSource, prompt, detail] = await Promise.all([
+    readFile(new URL("../designs/001-lumen/manifest.json", import.meta.url), "utf8"),
+    readFile(new URL("../designs/001-lumen/prompt.md", import.meta.url), "utf8"),
+    readFile(new URL("../app/designs/001-lumen/page.tsx", import.meta.url), "utf8"),
+  ]);
+  const manifest = JSON.parse(manifestSource);
+  assert.equal(manifest.source_type, "owner-supplied-component");
+  assert.equal(manifest.source_attribution, "21st.dev");
+  assert.equal(manifest.prompt_status, "draft-blind-test-pending");
+  assert.match(prompt, /blind reproduction test pending/i);
+  assert.match(prompt, /postcard download/);
+  assert.match(prompt, /quote copy/);
+  assert.match(detail, /ImageHover/);
+  assert.match(detail, /OWNER-SUPPLIED COMPONENT/);
+  assert.match(detail, /postcard download/);
+  assert.match(detail, /quote copy/);
 });
 
 test("analytics, canonical origin, and normative shell contract remain intact", async () => {
@@ -89,4 +122,7 @@ test("analytics, canonical origin, and normative shell contract remain intact", 
   assert.match(analytics, /xkt1ed2duv/);
   assert.match(layout, /https:\/\/100ai\.design/);
   assert.match(system, /Status: normative/);
+  assert.match(system, /Product Model/);
+  assert.match(system, /Source & Prompt/);
+  assert.match(system, /blind reproduction/i);
 });
