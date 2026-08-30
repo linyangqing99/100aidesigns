@@ -187,7 +187,8 @@ All routes must render the shared primitives from `components/SiteChrome.tsx`.
 ### Cards
 
 - Collection cards use a preview region, an information row, and a tag row separated by rules.
-- Live cards use the lime badge; queued cards use a quiet outlined badge.
+- Live cards use the lime badge; independent studies use a blue study badge; queued cards use a quiet outlined badge.
+- `STUDY` means the attributed replica route and audit are implemented, while independent production deployment may still be pending. A study must keep its source link and affiliation notice visible.
 - Card hover may adjust contrast/saturation slightly but must not lift, scale, tilt, or add a shadow.
 - The entire card is one clear target. Avoid nested controls unless the card is no longer a link.
 

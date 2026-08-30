@@ -13,18 +13,25 @@ async function render(pathname = "/") {
   );
 }
 
-test("home and both live design details render the collection shell", async () => {
-  const responses = await Promise.all([render(), render("/designs/001-lumen"), render("/designs/002-tasteprint")]);
+test("home and all released design details render the collection shell", async () => {
+  const responses = await Promise.all([
+    render(),
+    render("/designs/001-lumen"),
+    render("/designs/002-tasteprint"),
+    render("/designs/003-granola-study"),
+  ]);
   for (const response of responses) assert.equal(response.status, 200);
-  const [home, lumen, tasteprint] = await Promise.all(responses.map((response) => response.text()));
-  for (const html of [home, lumen, tasteprint]) {
+  const [home, lumen, tasteprint, granolaStudy] = await Promise.all(responses.map((response) => response.text()));
+  for (const html of [home, lumen, tasteprint, granolaStudy]) {
     assert.match(html, /100 AI Designs home/);
     assert.match(html, /GITHUB/);
     assert.match(html, /Inspired by the discovery model/);
   }
   assert.match(home, /href="\/designs\/002-tasteprint"/);
   assert.match(home, /Tasteprint/);
-  for (const detail of [lumen, tasteprint]) {
+  assert.match(home, /href="\/designs\/003-granola-study"/);
+  assert.match(home, /Granola Homepage Study/);
+  for (const detail of [lumen, tasteprint, granolaStudy]) {
     assert.match(detail, /PRODUCT MODEL/);
     assert.match(detail, /STYLE DNA/);
     assert.match(detail, /SOURCE &amp; PROMPT/);
@@ -33,11 +40,85 @@ test("home and both live design details render the collection shell", async () =
     assert.match(detail, /WHEN TO USE/);
     assert.match(detail, /EVIDENCE &amp; REUSE/);
     assert.match(detail, /BLIND REPRODUCTION PENDING/);
-    assert.match(detail, /OPEN LIVE EXPERIENCE/);
   }
+  for (const liveDetail of [lumen, tasteprint]) assert.match(liveDetail, /OPEN LIVE EXPERIENCE/);
   assert.match(lumen, /ImageHover/);
   assert.match(tasteprint, /InteractiveImageGallery/);
   assert.match(tasteprint, /tasteprint\.100ai\.design/);
+  assert.match(granolaStudy, /granola\.ai/);
+  assert.match(granolaStudy, /INDEPENDENT REPRODUCTION STUDY/);
+  assert.match(granolaStudy, /OPEN REPLICA/);
+});
+
+test("003 exposes a runnable replica with attribution kept on the audit page", async () => {
+  const [detailResponse, replicaResponse, registry, manifestSource, sitemap, appSource, studyCss] = await Promise.all([
+    render("/designs/003-granola-study"),
+    render("/studies/003-granola-homepage"),
+    readFile(new URL("../data/designs.ts", import.meta.url), "utf8"),
+    readFile(new URL("../designs/003-granola-study/manifest.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/sitemap.ts", import.meta.url), "utf8"),
+    readFile(new URL("../designs/003-granola-study/site/src/GranolaStudyApp.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../designs/003-granola-study/site/src/GranolaStudy.module.css", import.meta.url), "utf8"),
+  ]);
+
+  assert.equal(detailResponse.status, 200);
+  assert.equal(replicaResponse.status, 200);
+
+  const [detail, replica] = await Promise.all([detailResponse.text(), replicaResponse.text()]);
+  assert.match(detail, /Independent study\. Not affiliated with Granola\./);
+  assert.match(detail, /https:\/\/www\.granola\.ai/);
+  assert.doesNotMatch(replica, /Independent study\. Not affiliated with Granola\./);
+  assert.doesNotMatch(replica, /View source|Source website/);
+  assert.match(replica, /Afterword/);
+  assert.match(replica, /The meeting memory for work that moves/);
+  assert.match(replica, /Before the call/);
+  assert.match(replica, /During the call/);
+  assert.match(replica, /After the call/);
+  assert.match(replica, /Perfect meeting memory/);
+  assert.match(replica, /Team stand-ups/);
+  assert.match(replica, /Ask your meetings/);
+  assert.match(appSource, /IntersectionObserver/);
+  assert.match(appSource, /@phosphor-icons\/react/);
+  assert.doesNotMatch(appSource, /addEventListener\(["']scroll/);
+  assert.match(studyCss, /animation-timeline:\s*scroll/);
+  assert.match(studyCss, /Newsreader Variable/);
+  assert.match(studyCss, /DM Sans Variable/);
+
+  const manifest = JSON.parse(manifestSource);
+  assert.deepEqual(
+    {
+      id: manifest.id,
+      slug: manifest.slug,
+      status: manifest.status,
+      source_url: manifest.source_url,
+      replica_path: manifest.replica_path,
+      detail_path: manifest.detail_path,
+    },
+    {
+      id: "003",
+      slug: "003-granola-study",
+      status: "study",
+      source_url: "https://www.granola.ai/",
+      replica_path: "/studies/003-granola-homepage",
+      detail_path: "/designs/003-granola-study",
+    },
+  );
+  assert.equal(manifest.source_snapshot_date, "2026-08-27");
+  assert.equal(manifest.deployment_url, "https://100ai.design/studies/003-granola-homepage");
+  assert.equal(manifest.deployment_date, "2026-08-30");
+  assert.equal(manifest.replica_boundary, "structure-and-visual-rhythm-with-original-brand-and-assets");
+  assert.match(registry, /id: "003".*status: "study".*href: "\/designs\/003-granola-study"/);
+  assert.match(sitemap, /designs\/003-granola-study/);
+  assert.match(sitemap, /studies\/003-granola-homepage/);
+  assert.doesNotMatch(appSource, /granola\.ai\/_next\/image/);
+  assert.doesNotMatch(appSource, /images\.unsplash\.com/);
+
+  await Promise.all([
+    access(new URL("../designs/003-granola-study/site/public/assets/hero-notes.png", import.meta.url)),
+    access(new URL("../designs/003-granola-study/site/public/assets/before-call.png", import.meta.url)),
+    access(new URL("../designs/003-granola-study/site/public/assets/after-call.png", import.meta.url)),
+    access(new URL("../public/previews/granola-study.png", import.meta.url)),
+  ]);
 });
 
 test("the legacy case2 route redirects to the canonical 002 detail", async () => {

@@ -4,7 +4,7 @@ export type DesignEntry = {
   title: string;
   subtitle: string;
   family: string;
-  status: "live" | "queued";
+  status: "live" | "study" | "queued";
   tags: string[];
   preview: string;
   href?: string;
@@ -15,7 +15,7 @@ export const families = ["All", "Immersive", "Editorial", "Minimal Product", "Fu
 export const designs: DesignEntry[] = [
   { id: "001", slug: "001-lumen", title: "Lumen Micro Journey", subtitle: "Discover a distant place with one minute of light", family: "Immersive", status: "live", tags: ["dark", "exploration", "emotional"], preview: "lumen", href: "/designs/001-lumen" },
   { id: "002", slug: "002-tasteprint", title: "Tasteprint", subtitle: "Turn three instinctive image choices into a usable creative direction", family: "Immersive", status: "live", tags: ["visual taste", "selection", "editorial"], preview: "tasteprint", href: "/designs/002-tasteprint" },
-  { id: "003", slug: "003-quiet-saas", title: "Quiet SaaS", subtitle: "A calm, credible homepage for focused tools", family: "Minimal Product", status: "queued", tags: ["SaaS", "restraint", "trust"], preview: "quiet" },
+  { id: "003", slug: "003-granola-study", title: "Granola Homepage Study", subtitle: "Rebuild a calm meeting-product homepage, then transfer its visual logic", family: "Minimal Product", status: "study", tags: ["reproduction", "SaaS", "editorial restraint"], preview: "granola", href: "/designs/003-granola-study" },
   { id: "004", slug: "004-orbit-console", title: "Orbit Console", subtitle: "A spatial control room for future-facing products", family: "Future Interface", status: "queued", tags: ["HUD", "spatial", "motion"], preview: "orbit" },
   { id: "005", slug: "005-founders-note", title: "Founder’s Note", subtitle: "Brand storytelling led by a human voice", family: "Brand Story", status: "queued", tags: ["story", "portrait", "longform"], preview: "founder" },
   { id: "006", slug: "006-signal-room", title: "Signal Room", subtitle: "A dense intelligence and trends workspace", family: "Data Dense", status: "queued", tags: ["dashboard", "signals", "utility"], preview: "signal" },

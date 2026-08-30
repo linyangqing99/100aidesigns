@@ -26,13 +26,13 @@ export function Catalog({ designs, families }: { designs: DesignEntry[]; familie
             <div className={`design-preview preview-${design.preview}`}>
               <div className="preview-ui"><i /><i /><i /></div>
               <span className="design-number">{design.id}</span>
-              {design.status === "live" ? <span className="live-badge">LIVE</span> : <span className="queue-badge">IN QUEUE</span>}
+              {design.status === "live" ? <span className="live-badge">LIVE</span> : design.status === "study" ? <span className="study-badge">STUDY</span> : <span className="queue-badge">IN QUEUE</span>}
               <div className="preview-title"><small>{design.family}</small><strong>{design.title}</strong></div>
             </div>
-            <div className="card-info"><div><h3>{design.title}</h3><p>{design.subtitle}</p></div><span>{design.status === "live" ? "VIEW DESIGN ↗" : "COMING"}</span></div>
+            <div className="card-info"><div><h3>{design.title}</h3><p>{design.subtitle}</p></div><span>{design.status === "live" ? "VIEW DESIGN ↗" : design.status === "study" ? "OPEN STUDY ↗" : "COMING"}</span></div>
             <div className="tag-row">{design.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
           </>;
-          const className = `design-card ${design.status === "live" ? "is-featured" : "is-queued"}`;
+          const className = `design-card ${design.status === "queued" ? "is-queued" : "is-featured"}`;
           return design.href ? <a className={className} href={design.href} key={design.id}>{card}</a> : <article className={className} key={design.id}>{card}</article>;
         })}
       </div>

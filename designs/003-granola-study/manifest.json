@@ -1,0 +1,20 @@
+{
+  "id": "003",
+  "slug": "003-granola-study",
+  "name": "Granola Homepage Study",
+  "status": "study",
+  "family": "minimal-product",
+  "source_url": "https://www.granola.ai/",
+  "source_snapshot_date": "2026-08-27",
+  "replica_path": "/studies/003-granola-homepage",
+  "detail_path": "/designs/003-granola-study",
+  "deployment_url": "https://100ai.design/studies/003-granola-homepage",
+  "deployment_date": "2026-08-30",
+  "replica_boundary": "structure-and-visual-rhythm-with-original-brand-and-assets",
+  "transfer_brand": "Afterword",
+  "tags": ["reproduction", "quiet-saas", "editorial", "meeting-memory", "visual-rhythm"],
+  "prompt_version": "0.1.0",
+  "prompt_status": "documented-blind-reproduction-pending",
+  "asset_provenance": "Three original product visuals generated for this study with OpenAI image generation. No Granola screenshots, people, logos, or product assets are included.",
+  "license_note": "Independent educational reproduction study. Not affiliated with Granola. Attribution is kept on the audit page and in project documentation. The replica transfers observed structure into original branding, copy, interactions, and visual assets."
+}
