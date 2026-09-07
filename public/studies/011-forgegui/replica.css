@@ -1,0 +1,14 @@
+/* Small implementation additions. Original design tokens, breakpoints and effects are in styles.css. */
+[hidden] {display:none !important}
+body {margin:0;background:#101010}
+button,summary {cursor:pointer}
+#mobile-navigation {max-height:calc(100dvh - 110px);overflow-y:auto;overscroll-behavior:contain}
+.auth-overlay {overflow-y:auto;overscroll-behavior:contain}
+.auth-overlay > section {margin:auto;flex-shrink:0;animation:replica-dialog .42s cubic-bezier(.16,1,.3,1)}
+@keyframes replica-dialog {from{opacity:0;transform:scale(.96) translateY(24px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.form-feedback {font:15px/1.5 var(--fg-font-ui);color:#b3d5fa;padding:12px 16px;border-radius:16px;background:#006bf81a;border:1px solid #006bf840}
+#demo-toast {position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);padding:14px 22px;border-radius:22px;border:1px solid #ffffff26;background:#181a1af0;box-shadow:0 12px 42px #0009;backdrop-filter:blur(20px);color:#fff;font:15px/1.5 var(--fg-font-ui);text-align:center}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+#dialog-host.is-closing .auth-overlay {opacity:0;transition:opacity .35s ease;pointer-events:none}
+#dialog-host.is-closing section {transform:scale(.96) translateY(24px)!important;transition:transform .35s cubic-bezier(.16,1,.3,1)!important}

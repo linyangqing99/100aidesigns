@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
@@ -19,10 +20,11 @@ test("home and all released design details render the collection shell", async (
     render("/designs/001-lumen"),
     render("/designs/002-tasteprint"),
     render("/designs/003-granola-study"),
+    render("/designs/011-forgegui-study"),
   ]);
   for (const response of responses) assert.equal(response.status, 200);
-  const [home, lumen, tasteprint, granolaStudy] = await Promise.all(responses.map((response) => response.text()));
-  for (const html of [home, lumen, tasteprint, granolaStudy]) {
+  const [home, lumen, tasteprint, granolaStudy, forgeguiStudy] = await Promise.all(responses.map((response) => response.text()));
+  for (const html of [home, lumen, tasteprint, granolaStudy, forgeguiStudy]) {
     assert.match(html, /100 AI Designs home/);
     assert.match(html, /GITHUB/);
     assert.match(html, /Inspired by the discovery model/);
@@ -31,7 +33,7 @@ test("home and all released design details render the collection shell", async (
   assert.match(home, /Tasteprint/);
   assert.match(home, /href="\/designs\/003-granola-study"/);
   assert.match(home, /Granola Homepage Study/);
-  for (const detail of [lumen, tasteprint, granolaStudy]) {
+  for (const detail of [lumen, tasteprint, granolaStudy, forgeguiStudy]) {
     assert.match(detail, /PRODUCT MODEL/);
     assert.match(detail, /STYLE DNA/);
     assert.match(detail, /SOURCE &amp; PROMPT/);
@@ -48,6 +50,9 @@ test("home and all released design details render the collection shell", async (
   assert.match(granolaStudy, /granola\.ai/);
   assert.match(granolaStudy, /INDEPENDENT REPRODUCTION STUDY/);
   assert.match(granolaStudy, /OPEN REPLICA/);
+  assert.match(forgeguiStudy, /forgegui\.com/);
+  assert.match(home, /href="\/designs\/011-forgegui-study"/);
+  assert.match(home, /004 \/ 100/);
 });
 
 test("003 exposes a runnable replica with attribution kept on the audit page", async () => {
@@ -206,4 +211,31 @@ test("analytics, canonical origin, and normative shell contract remain intact", 
   assert.match(system, /Product Model/);
   assert.match(system, /Source & Prompt/);
   assert.match(system, /blind reproduction/i);
+});
+
+
+test("011 packages every source asset intact and isolates the static replica", async () => {
+  const root = new URL("../public/studies/011-forgegui/", import.meta.url);
+  const [manifestSource, document, script, detailResponse] = await Promise.all([
+    readFile(new URL("../designs/011-forgegui-study/asset-manifest.json", import.meta.url), "utf8"),
+    readFile(new URL("index.html", root), "utf8"),
+    readFile(new URL("app.js", root), "utf8"),
+    render("/designs/011-forgegui-study"),
+  ]);
+  assert.equal(detailResponse.status, 200);
+  const detail = await detailResponse.text();
+  assert.match(detail, /Independent study\. Not affiliated with ForgeGUI\./);
+  assert.match(detail, /href="\/studies\/011-forgegui-homepage\?lang=en"/);
+  assert.match(document, /<base href="\/studies\/011-forgegui\/">/);
+  assert.match(document, /name="robots" content="noindex/);
+  assert.doesNotMatch(document, /_next\/|<iframe|googletagmanager/);
+  assert.doesNotMatch(script, /fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage/);
+  const assets = JSON.parse(manifestSource);
+  assert.equal(assets.length, 25);
+  for (const asset of assets) {
+    const bytes = await readFile(new URL(asset.url.slice(1), root));
+    assert.equal(bytes.length, asset.bytes, asset.url);
+    assert.equal(createHash("sha256").update(bytes).digest("hex"), asset.sha256, asset.url);
+  }
+  await access(new URL("../public/previews/forgegui-study.webp", import.meta.url));
 });

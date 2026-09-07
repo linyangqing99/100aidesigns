@@ -1,0 +1,33 @@
+{
+  "id": "011",
+  "slug": "011-forgegui-study",
+  "name": "ForgeGUI Homepage Study",
+  "status": "study",
+  "family": "immersive",
+  "source_url": "https://forgegui.com/",
+  "source_snapshot_date": "2026-09-07",
+  "replica_path": "/studies/011-forgegui-homepage",
+  "detail_path": "/designs/011-forgegui-study",
+  "deployment_url": "https://100ai.design/studies/011-forgegui-homepage",
+  "replica_boundary": "attributed-homepage-visual-and-interaction-reproduction",
+  "implementation_path": "public/studies/011-forgegui",
+  "preview_path": "public/previews/forgegui-study.webp",
+  "prompt_version": "0.1.0",
+  "prompt_status": "documented-blind-reproduction-pending",
+  "asset_provenance": "Original public ForgeGUI media, logos, fonts, copy, SVG markup, and styles captured on 2026-09-07. Instrument Serif font files localized from the Google Fonts family used by the source. Native homepage interaction code written for this study. See asset-manifest.json for source media checksums.",
+  "license_note": "Independent educational study. Not affiliated with ForgeGUI. Source identity and assets remain attributable to their respective owners. The reusable prompt describes transferable decisions for an original product.",
+  "validation": {
+    "layout_widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "measured_sections": 8,
+    "section_height_max_delta_css_px": 0,
+    "pixel_diff": "not-performed",
+    "production_performance_equivalence": "not-measured",
+    "backend": "not-connected"
+  }
+}

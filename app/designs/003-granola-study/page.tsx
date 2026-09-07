@@ -129,7 +129,7 @@ export default function GranolaStudyDetailPage() {
           sourceNote={<>The public source was reviewed at <a href={SOURCE_URL} target="_blank" rel="noreferrer">granola.ai ↗</a> on 2026-08-27. Independent study. Not affiliated with Granola. The audit records visible decisions only; no source code, customer media, product screenshots, or Granola assets are included.</>}
           reuseBoundary="Reuse the split hero, space-to-proof rhythm, restrained color system, workflow storytelling, and documented prompt. Do not reuse the Granola or Afterword names, page copy, people, screenshots, generated visuals, or final interface as an unmodified commercial identity."
         />
-        <DetailFooter designId="003" nextLabel="NEXT: ORBIT CONSOLE →" />
+        <DetailFooter designId="003" nextLabel="NEXT: FORGEGUI STUDY →" nextHref="/designs/011-forgegui-study" />
       </main>
       <SiteFooter progressText="003 / 100 · OPEN DESIGN LAB · 2026" />
     </>

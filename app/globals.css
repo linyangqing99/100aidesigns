@@ -373,3 +373,16 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* ForgeGUI remains a bounded specimen inside the shared collection shell. */
+.mosaic-forgegui { color: #fff; background: #111 url("/previews/forgegui-study.webp") center/cover; }
+.mosaic-forgegui .mosaic-art { display: none; }
+.mosaic-forgegui .mosaic-caption { padding: 8px; background: rgba(0,0,0,.7); }
+.preview-forgegui { color: #fff; background: #111 url("/previews/forgegui-study.webp") center/cover; }
+.preview-forgegui .preview-title, .preview-forgegui .preview-ui { display: none; }
+.preview-forgegui .design-number { padding: 4px; background: #111; }
+.forgegui-study-showcase { display: block; align-self: center; min-width: 0; margin-left: 14px; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; }
+.forgegui-study-showcase img { display: block; width: 100%; height: auto; aspect-ratio: 1440/1000; }
+.forgegui-study-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; border-top: 1px solid var(--ink); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
+.forgegui-study-showcase:hover > span { color: var(--blue); }
+@media (max-width: 980px) { .detail-hero .forgegui-study-showcase { margin: 14px 0 0; } }
