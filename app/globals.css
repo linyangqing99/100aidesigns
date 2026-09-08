@@ -386,3 +386,16 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
 .forgegui-study-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; border-top: 1px solid var(--ink); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
 .forgegui-study-showcase:hover > span { color: var(--blue); }
 @media (max-width: 980px) { .detail-hero .forgegui-study-showcase { margin: 14px 0 0; } }
+
+/* SeaArt's dark preview remains inside the collection's specimen boundary. */
+.mosaic-seaart { color: #fff; background: #151619 url("/previews/seaart-study.webp") center/cover; }
+.mosaic-seaart .mosaic-art { display: none; }
+.mosaic-seaart .mosaic-caption { padding: var(--space-2); background: rgba(15,16,18,.88); }
+.preview-seaart { color: #fff; background: #151619 url("/previews/seaart-study.webp") top center/cover; }
+.preview-seaart .preview-title, .preview-seaart .preview-ui { display: none; }
+.preview-seaart .design-number { padding: var(--space-1); background: #151619; }
+.seaart-study-showcase { display: block; align-self: center; min-width: 0; margin-left: var(--space-3); border: var(--rule) solid var(--border-strong); color: var(--text-primary); text-decoration: none; }
+.seaart-study-showcase img { display: block; width: 100%; height: auto; aspect-ratio: 1440/1000; object-fit: cover; object-position: top; }
+.seaart-study-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); padding: var(--space-4); border-top: var(--rule) solid var(--border-strong); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
+.seaart-study-showcase:hover > span { color: var(--accent-editorial); }
+@media (max-width: 980px) { .detail-hero .seaart-study-showcase { margin: var(--space-3) 0 0; } }

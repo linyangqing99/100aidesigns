@@ -10,6 +10,7 @@ The project is inspired by the discovery and distribution model of [21st.dev](ht
 - 002 Tasteprint Visual Direction Lab — live
 - 003 Granola Homepage Study — live as an attributed reproduction study
 - 011 ForgeGUI Homepage Study — attributed visual and interaction reproduction
-- 004–010 and 012–100 — planned through a 10-family research matrix
+- 012 SeaArt Homepage Study — attributed Chinese creator-community homepage reproduction
+- 004–010 and 013–100 — planned through a 10-family research matrix
 
 See `docs/UI-SYSTEM.md` for the enforced site-wide interface contract, plus `docs/ARCHITECTURE.md` and `docs/ROADMAP-100.md` for the product structure and release plan.

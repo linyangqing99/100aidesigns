@@ -21,10 +21,11 @@ test("home and all released design details render the collection shell", async (
     render("/designs/002-tasteprint"),
     render("/designs/003-granola-study"),
     render("/designs/011-forgegui-study"),
+    render("/designs/012-seaart-study"),
   ]);
   for (const response of responses) assert.equal(response.status, 200);
-  const [home, lumen, tasteprint, granolaStudy, forgeguiStudy] = await Promise.all(responses.map((response) => response.text()));
-  for (const html of [home, lumen, tasteprint, granolaStudy, forgeguiStudy]) {
+  const [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy] = await Promise.all(responses.map((response) => response.text()));
+  for (const html of [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy]) {
     assert.match(html, /100 AI Designs home/);
     assert.match(html, /GITHUB/);
     assert.match(html, /Inspired by the discovery model/);
@@ -33,7 +34,7 @@ test("home and all released design details render the collection shell", async (
   assert.match(home, /Tasteprint/);
   assert.match(home, /href="\/designs\/003-granola-study"/);
   assert.match(home, /Granola Homepage Study/);
-  for (const detail of [lumen, tasteprint, granolaStudy, forgeguiStudy]) {
+  for (const detail of [lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy]) {
     assert.match(detail, /PRODUCT MODEL/);
     assert.match(detail, /STYLE DNA/);
     assert.match(detail, /SOURCE &amp; PROMPT/);
@@ -52,7 +53,58 @@ test("home and all released design details render the collection shell", async (
   assert.match(granolaStudy, /OPEN REPLICA/);
   assert.match(forgeguiStudy, /forgegui\.com/);
   assert.match(home, /href="\/designs\/011-forgegui-study"/);
-  assert.match(home, /004 \/ 100/);
+  assert.match(seaartStudy, /seaart\.ai\/zhCN/);
+  assert.match(home, /href="\/designs\/012-seaart-study"/);
+  assert.match(home, /SeaArt Homepage Study/);
+  assert.match(home, /005 \/ 100/);
+});
+
+test("012 keeps the attributed Chinese specimen separate from its English collection case", async () => {
+  const [detailResponse, registry, manifestSource, sitemap, prompt] = await Promise.all([
+    render("/designs/012-seaart-study"),
+    readFile(new URL("../data/designs.ts", import.meta.url), "utf8"),
+    readFile(new URL("../designs/012-seaart-study/manifest.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/sitemap.ts", import.meta.url), "utf8"),
+    readFile(new URL("../designs/012-seaart-study/prompt.md", import.meta.url), "utf8"),
+  ]);
+  assert.equal(detailResponse.status, 200);
+  const detail = await detailResponse.text();
+  assert.match(detail, /Independent study\. Not affiliated with SeaArt\./);
+  assert.match(detail, /href="https:\/\/www\.seaart\.ai\/zhCN"/);
+  assert.match(detail, /href="\/studies\/012-seaart-homepage"/);
+  assert.match(detail, /OPEN REPLICA/);
+  assert.match(detail, /SeaArt account access, payment, uploads, or AI generation/);
+  assert.equal((detail.match(/<h1(?:\s[^>]*)?>/g) || []).length, 1);
+  const manifest = JSON.parse(manifestSource);
+  assert.deepEqual(
+    {
+      id: manifest.id,
+      slug: manifest.slug,
+      status: manifest.status,
+      source_url: manifest.source_url,
+      replica_path: manifest.replica_path,
+      detail_path: manifest.detail_path,
+      specimen_language: manifest.specimen_language,
+      case_language: manifest.case_language,
+    },
+    {
+      id: "012",
+      slug: "012-seaart-study",
+      status: "study",
+      source_url: "https://www.seaart.ai/zhCN",
+      replica_path: "/studies/012-seaart-homepage",
+      detail_path: "/designs/012-seaart-study",
+      specimen_language: "zh-CN",
+      case_language: "en",
+    },
+  );
+  assert.match(registry, /id: "012".*status: "study".*href: "\/designs\/012-seaart-study"/);
+  assert.match(sitemap, /designs\/012-seaart-study/);
+  assert.doesNotMatch(sitemap, /studies\/012-seaart-homepage/);
+  assert.match(prompt, /Product goal/);
+  assert.match(prompt, /Use cases/);
+  assert.match(prompt, /Avoid/);
+  assert.match(prompt, /blind reproduction test pending/);
 });
 
 test("003 exposes a runnable replica with attribution kept on the audit page", async () => {

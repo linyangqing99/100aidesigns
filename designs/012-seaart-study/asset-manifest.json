@@ -1,0 +1,424 @@
+{
+  "source_page": "https://www.seaart.ai/zhCN",
+  "snapshot_date": "2026-09-08",
+  "notes": [
+    "Public page media copied for an isolated interface study. Text and metrics are a 2026-09-08 snapshot.",
+    "Unobserved author avatars remain empty for an initial fallback.",
+    "The final gallery destination was not verified and links to the public apps index."
+  ],
+  "assets": [
+    {
+      "source": "https://image.cdn2.seaart.me/web/static/image-mark-2.webp",
+      "local_path": "public/studies/012-seaart/assets/create-image.webp",
+      "sha256": "83a26c6e9392108de8d3aa9ee7dfba92710b26cddf44dcf3f943ddc8e167d537",
+      "purpose": "create-image",
+      "width": 525,
+      "height": 330,
+      "bytes": 31354
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/web/static/video-mark-1.webp",
+      "local_path": "public/studies/012-seaart/assets/create-video.webp",
+      "sha256": "b23047f2e208e8110b4df8aae593fb846d4c059e6907de7d4d879bb9a723dd4e",
+      "purpose": "create-video",
+      "width": 525,
+      "height": 330,
+      "bytes": 30462
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/web/static/seaarttv-home-1.gif",
+      "local_path": "public/studies/012-seaart/assets/create-movies.gif",
+      "sha256": "a154b81aa10bff467330bb904a8be47362598d22e6a057b70ca9bf6d83a7e9e3",
+      "purpose": "create-movies",
+      "width": 380,
+      "height": 240,
+      "bytes": 964540
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/web/static/init-bg.webp",
+      "local_path": "public/studies/012-seaart/assets/shortcut-bg.webp",
+      "sha256": "cab53f8946bac38cc1f2929e7d8961f0b5b0268c82b1835e5cd215066cbd8af9",
+      "purpose": "shortcut-bg",
+      "width": 832,
+      "height": 216,
+      "bytes": 24460
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260507/d17d445c-a1b4-400a-b29f-d80bfe3a9f2d.png?eo-img.resize=w/474&eo-img.format=webp",
+      "local_path": "public/studies/012-seaart/assets/featured-cli.webp",
+      "sha256": "e1d75b8185d8a0591ef4a6f241df5146b071877b4fb21986a12c4c2a55ef4194",
+      "purpose": "featured-cli",
+      "width": 474,
+      "height": 632,
+      "bytes": 13182
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260720/9522fc15-b69c-490d-80f4-c1127aea1ec8.gif",
+      "local_path": "public/studies/012-seaart/assets/featured-motion.gif",
+      "sha256": "226ee43cc4a7a5e891ca3bfac508883829665e46d33491275fff7f18dbe12a8d",
+      "purpose": "featured-motion",
+      "width": 240,
+      "height": 320,
+      "bytes": 3057300
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260907/1130446c-439c-4a97-a84b-0a1efe45c77f.png?eo-img.resize=w/474&eo-img.format=webp",
+      "local_path": "public/studies/012-seaart/assets/contest-app-play.webp",
+      "sha256": "fdf49648c422a654afaea273da2c242fb50f8957c00a48cda8bf37b65f81a817",
+      "purpose": "contest-app-play",
+      "width": 474,
+      "height": 267,
+      "bytes": 18296
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260828/bae31272-be4b-4d43-9ed8-34c5712069b4.webp",
+      "local_path": "public/studies/012-seaart/assets/contest-reversal.webp",
+      "sha256": "8a0c614804d57dcc800a3a697e548abce99c0d1267ebaab87cec11a1ce6bb56c",
+      "purpose": "contest-reversal",
+      "width": 1200,
+      "height": 675,
+      "bytes": 43444
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260907/3b635f22-b54c-4d36-a8fd-590210bb1d13.webp",
+      "local_path": "public/studies/012-seaart/assets/contest-taste-lab.webp",
+      "sha256": "9bf6419ae061f921ef56d3966c757a048961a9d596e5e6ed39f30c53d49cdf40",
+      "purpose": "contest-taste-lab",
+      "width": 1200,
+      "height": 515,
+      "bytes": 55306
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260826/64240f9d-be19-4949-89bb-9e12ef35b5cb.webp",
+      "local_path": "public/studies/012-seaart/assets/contest-film.webp",
+      "sha256": "12ec02510ee4400bc817c3f78dbe93e5cb5e9a93324b5bf2b55b21ddb9b3117b",
+      "purpose": "contest-film",
+      "width": 1024,
+      "height": 579,
+      "bytes": 44408
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/temp-convert-webp/highwebp/static/avatar/20250612/4e2c06d0-d90d-4a0e-aa7d-02015714bbc5_low.webp",
+      "local_path": "public/studies/012-seaart/assets/avatar-seaart.webp",
+      "sha256": "cf5a748d06ac0e65563ca8a7adac1ebe93d407f9e2fa492c4e61ddf59e873640",
+      "purpose": "avatar-seaart",
+      "width": 155,
+      "height": 155,
+      "bytes": 2538
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/upload/20251025/df78b44a-9487-4056-b660-78522030287d.webp",
+      "local_path": "public/studies/012-seaart/assets/decoration-halloween.webp",
+      "sha256": "0d77bec9fcb202bfb30fb9fa675ef510707128328a13265c207d1cdd86ae2e2e",
+      "purpose": "decoration-halloween",
+      "width": 400,
+      "height": 400,
+      "bytes": 590568
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/temp-convert-webp/png/static/avatar/20240529/cbc88d8e-9aae-4135-bc46-281a3ea1eda6_low.webp",
+      "local_path": "public/studies/012-seaart/assets/avatar-girl.webp",
+      "sha256": "4113e4059442987b3ed966478076bef699945971d3143755684060383006fecb",
+      "purpose": "avatar-girl",
+      "width": 102,
+      "height": 128,
+      "bytes": 1984
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/upload/20250908/bf893fe5-910e-4af1-9fa4-4b13e95109e9.webp",
+      "local_path": "public/studies/012-seaart/assets/decoration-fairy.webp",
+      "sha256": "832efd9b8fe33a83b1535265d1c8f6609a7cf8c051f0f3cf200773cb25ed337c",
+      "purpose": "decoration-fairy",
+      "width": 200,
+      "height": 200,
+      "bytes": 111318
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/upload/20250607/cf1a7a82-81fd-482e-a569-b9d274d1dfe8.webp",
+      "local_path": "public/studies/012-seaart/assets/decoration-fire.webp",
+      "sha256": "2deadbbc81bd3b6f3e9d10df451925748312c32f8c9d4f2ee552785fd5fde675",
+      "purpose": "decoration-fire",
+      "width": 400,
+      "height": 400,
+      "bytes": 597080
+    },
+    {
+      "source": "https://static.cdn.seaart.me/web/prod/_nuxt/home-nav-logo.CCR2HZNtsNtUezYP.png",
+      "local_path": "public/studies/012-seaart/assets/header-logo.png",
+      "sha256": "23f052d3f79ba3477d39d9441ee93bec7eca43e17bcc400f4854ef71e17e7001",
+      "purpose": "header-logo",
+      "width": 270,
+      "height": 64,
+      "bytes": 5030
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/decorations/decorations_banner_bg.webp",
+      "local_path": "public/studies/012-seaart/assets/gift-banner.webp",
+      "sha256": "a3c65a0f574b49a2669832aebac8d3a2d3270127aa18520342522775ca3a8228",
+      "purpose": "gift-banner",
+      "width": 2964,
+      "height": 80,
+      "bytes": 45778
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/source/2026-08-25/da6n1ote878c73erm730.mp4?eo-img.resize=w/474&eo-img.format=webp&ff=true",
+      "local_path": "public/studies/012-seaart/assets/featured-wan.webp",
+      "sha256": "b54de82bf921abef26aa7e250a5473e4e681a6eda776c2f6506d3134eff49887",
+      "purpose": "Wan 3.0",
+      "bytes": 21458,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 629
+    },
+    {
+      "source": "https://image.seaartcdn.com/20250116/ce85af90-57bc-44c1-8247-c29d73caa0e7.mp4?eo-img.resize=w/474&eo-img.format=webp&ff=true",
+      "local_path": "public/studies/012-seaart/assets/featured-minimax-max.webp",
+      "sha256": "bc4ac2160dc3675e6ad03654e089a63333ea64d2d2c5f69ef91eb031a8d8dd91",
+      "purpose": "MiniMax H3 Max",
+      "bytes": 65754,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 632
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260630/81ed5a98a83a975c02b5e64b4c3888ec_high.webp",
+      "local_path": "public/studies/012-seaart/assets/featured-duo.webp",
+      "sha256": "6e00067f138d35e16fb0790d17d242490db25d2b5c0d93d724907f735bedfd29",
+      "purpose": "无限任意双人合照",
+      "bytes": 80198,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 800,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/20250116/c85d554a-7ffd-488f-9372-1058cedf9642.mp4?eo-img.resize=w/474&eo-img.format=webp&ff=true",
+      "local_path": "public/studies/012-seaart/assets/featured-realtime.webp",
+      "sha256": "5eec05c50950f7b3707970e3ffcf53205a88cb7f6a90dc8d3f981b14cf23920e",
+      "purpose": "实时对话",
+      "bytes": 45080,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 631
+    },
+    {
+      "source": "https://image.seaartcdn.com/20250116/130d3a37-113a-4161-8bd3-7645c0666ce1.mp4?eo-img.resize=w/474&eo-img.format=webp&ff=true",
+      "local_path": "public/studies/012-seaart/assets/featured-minimax-open.webp",
+      "sha256": "fc07778d186690e9ec89e542e86c82d9d0179574a79160a9ca940fd750993815",
+      "purpose": "Minimax H3 Open",
+      "bytes": 49174,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 636
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20251205/e017fb8461ec20beb11d7b53e1a3bf0a_high.webp?eo-img.resize=w/474",
+      "local_path": "public/studies/012-seaart/assets/featured-seedream.webp",
+      "sha256": "c7e31bdf4fac9ee39d4876c9a223ed339eb1d08879b0a8cc55853ac58bdadc40",
+      "purpose": "Seedream 4.5",
+      "bytes": 23460,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 632
+    },
+    {
+      "source": "https://image.seaartcdn.com/static/upload/20260730/a76703d6-06d6-4147-805c-284dec9b9c72.webp",
+      "local_path": "public/studies/012-seaart/assets/featured-dress-up.webp",
+      "sha256": "b344c3df5e5b1a54a0241139d537650cf809137b79913896896ec119636d7f03",
+      "purpose": "AI 换装游戏",
+      "bytes": 2450168,
+      "content_type": "image/webp",
+      "width": 360,
+      "height": 480
+    },
+    {
+      "source": "https://image.seaartcdn.com/2026-08-22/da4ima5e878c73ff35g0/dc36c72ba794426845ed493c7f76485b_high.webp?eo-img.resize=w/474",
+      "local_path": "public/studies/012-seaart/assets/gallery-cake.webp",
+      "sha256": "ca525bb96cc79181daa737fab4560e72705f49d4a5c8f3f1d4e4fa4685a6c7dc",
+      "purpose": "143. 蛋糕展示",
+      "bytes": 63306,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 948
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20251215/88dc2a221ecc87ca98622b8686d85ecc_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-personal-video.webp",
+      "sha256": "c05c8f5fd1d5c926fbdb1ce3961cce2e79e35dd2a67fce272065202d7208598b",
+      "purpose": "个人用_画像to動画",
+      "bytes": 31406,
+      "content_type": "image/webp",
+      "width": 474,
+      "height": 711
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260822/3e8feeac0dc275e5ccb6a8b838180d04_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-beach.webp",
+      "sha256": "ca5e93634da60b05d747847cf1bec94cfd02a07167ce65f92b2b979ce3f4fe9b",
+      "purpose": "摄影会 - 海滩比基尼 #6 - 颜色更改 - FilmEdit 4.0",
+      "bytes": 30728,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 771,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260903/124023a72d221909dd03e7d0849fce2d_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-dg-loop.webp",
+      "sha256": "7ac1e83bc94e8cabfb71d39ccfff2ed020a5ac53b2a56c79c2c8b42b398105f3",
+      "purpose": "DG Back 35s 循环 (图像转视频)",
+      "bytes": 89542,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 1050,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260616/42b6d12189f4c9295fb56f680a76de0b_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-4k-enhance.webp",
+      "sha256": "f49f8698101ecfe8b388d0009b316ea097975f9f205b767c587554482435d455",
+      "purpose": "4K 图像增强",
+      "bytes": 71096,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 803,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260416/339ed780c7565313f577de9882d6d488_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-zimage.webp",
+      "sha256": "3ed512b3edd3c0ba28a987c5ad968e4f64afdd83b4deb9bdf634c45f5fb45a81",
+      "purpose": "Z-Image Turbo + LoRA 简易生成",
+      "bytes": 67242,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 771,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260907/b73ac4ba2d945fe7107fbb6384f9f1c8_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-qwen-edit.webp",
+      "sha256": "a4525a41962e73fa6c5ab396dd4e83e6774fac86a4ec30ae5eff1853cfb02329",
+      "purpose": "多视角图像生成器 Qwen Edit",
+      "bytes": 142448,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 800,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260718/ae176c1a119d692f56cc7d5ed67c4b28_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-sequencer.webp",
+      "sha256": "2059d460ffd8aea191053ab01989b7ceba146572766dfd55504e54ba70bc87df",
+      "purpose": "🎬 序列器 🎬",
+      "bytes": 76832,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 893,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260205/699617227ccdb8dcb11af5dd3b4f7b87_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-smooth-video.webp",
+      "sha256": "d450e0fd8e2483e111a5f769fd74b50fea393e289ee7f87a9c67137d241f8b4f",
+      "purpose": "日常流畅10秒视频",
+      "bytes": 100758,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 800,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260822/168542ff5d795839b4e0add530498ebc_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-krea.webp",
+      "sha256": "9776907df94a10fd802e831a7ff0b29331bed5c7228fcb9f605098aa8b4efa89",
+      "purpose": "Krea 2💖低成本💛高画质💛×4",
+      "bytes": 126674,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 900,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260119/e4c215d7bad98382729606056f589bb5_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-snake.webp",
+      "sha256": "6b45e4dd631f27d8e36a7bd3c0908f863d0aee7876e94a7a70dc35e4fe32bd5d",
+      "purpose": "贪吃蛇游戏",
+      "bytes": 21310,
+      "content_type": "image/webp",
+      "width": 600,
+      "height": 331,
+      "transformation": "Resized to 600px maximum width, WebP quality 86"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/static/20260824/13a5064d6e6b3a17e0c2e2619cef16a5_high.webp",
+      "local_path": "public/studies/012-seaart/assets/gallery-cg-ultrahd.webp",
+      "sha256": "55a2e03117134d284d6ffe33764f26a6499ec10ba49bb3990bccbd85205f5cf1",
+      "purpose": "CG 超高清",
+      "bytes": 21626,
+      "content_type": "image/webp",
+      "width": 410,
+      "height": 373
+    },
+    {
+      "source": "https://static.cdn.seaart.me/web/prod/_nuxt/iconfont.-2Cl6vyKFsyIghoJ.woff2?t=1788769526459",
+      "local_path": "public/studies/012-seaart/assets/iconfont.woff2",
+      "sha256": "d50b91238046271fd4bf1fff28a60dad3a55802d04212334688f4b0253cf0759",
+      "purpose": "original icon font",
+      "bytes": 243748,
+      "content_type": "application/octet-stream"
+    },
+    {
+      "source": "https://image.seaartcdn.com/upload/source/2026-08-25/da6n1ote878c73erm730.mp4",
+      "local_path": "public/studies/012-seaart/assets/featured-wan.mp4",
+      "sha256": "e301d23223425255263fc89ea8edd6fda29b8e25844aaaf428852b6a6d6d712b",
+      "purpose": "Wan 3.0 hover playback",
+      "bytes": 235128,
+      "transformation": "No audio; H264 CRF 28, width 474px"
+    },
+    {
+      "source": "https://image.seaartcdn.com/20250116/ce85af90-57bc-44c1-8247-c29d73caa0e7.mp4",
+      "local_path": "public/studies/012-seaart/assets/featured-minimax-max.mp4",
+      "sha256": "f2c12965dfe45e91db6d7e80b1a6799a48b85a4ba3d2755f8a31313fa2df9339",
+      "purpose": "MiniMax H3 Max hover playback",
+      "bytes": 423525,
+      "transformation": "No audio; H264 CRF 28, width 474px"
+    },
+    {
+      "source": "https://static.cdn.seaart.me/web/prod/_nuxt/iconfont.Bo7cBCxVhSIfvqoE.woff2?t=1788769530920",
+      "local_path": "public/studies/012-seaart/assets/iconfont-v2.woff2",
+      "sha256": "9af18653db8d2b279f0cd73fa999fb9645ee3fbd6e6144ee6535994861f6fb53",
+      "purpose": "original sidebar icon font v2",
+      "bytes": 40256
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/temp-convert-webp/png/static/avatar/20240529/cbc88d8e-9aae-4135-bc46-281a3ea1eda6_low.webp",
+      "local_path": "public/studies/012-seaart/assets/avatar-ame.webp",
+      "sha256": "4113e4059442987b3ed966478076bef699945971d3143755684060383006fecb",
+      "purpose": "雨上がり author avatar",
+      "bytes": 1984
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/upload/20250908/bf893fe5-910e-4af1-9fa4-4b13e95109e9.webp",
+      "local_path": "public/studies/012-seaart/assets/avatar-ame-frame.webp",
+      "sha256": "832efd9b8fe33a83b1535265d1c8f6609a7cf8c051f0f3cf200773cb25ed337c",
+      "purpose": "雨上がり author avatar frame",
+      "bytes": 111318
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/static/upload/20251025/df78b44a-9487-4056-b660-78522030287d.webp",
+      "local_path": "public/studies/012-seaart/assets/avatar-seaart-frame.webp",
+      "sha256": "0d77bec9fcb202bfb30fb9fa675ef510707128328a13265c207d1cdd86ae2e2e",
+      "purpose": "SeaArt Official author avatar frame",
+      "bytes": 590568
+    },
+    {
+      "source": "https://image.cdn2.seaart.me/20250116/c85d554a-7ffd-488f-9372-1058cedf9642.mp4",
+      "local_path": "public/studies/012-seaart/assets/featured-realtime.mp4",
+      "sha256": "3a1aa4879624aaa8249a3276bc3844299d9150439e61fb490a0b064b5b28b6dc",
+      "purpose": "实时对话 hover playback",
+      "bytes": 235826,
+      "transformation": "No audio; H264 CRF 28, width 474px"
+    }
+  ]
+}

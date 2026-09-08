@@ -1,0 +1,43 @@
+{
+  "id": "012",
+  "slug": "012-seaart-study",
+  "name": "SeaArt Homepage Study",
+  "status": "study",
+  "family": "data-dense",
+  "source_url": "https://www.seaart.ai/zhCN",
+  "source_snapshot_date": "2026-09-08",
+  "source_state": "browser-visible-chinese-creator-community-homepage",
+  "replica_path": "/studies/012-seaart-homepage",
+  "detail_path": "/designs/012-seaart-study",
+  "deployment_url": "https://100ai.design/studies/012-seaart-homepage",
+  "deployment_status": "live",
+  "replica_boundary": "attributed-homepage-visual-and-local-interaction-reproduction",
+  "implementation_path": "public/studies/012-seaart",
+  "preview_path": "public/previews/seaart-study.webp",
+  "specimen_language": "zh-CN",
+  "case_language": "en",
+  "prompt_version": "0.1.0",
+  "prompt_status": "documented-blind-reproduction-pending",
+  "asset_provenance": "The reference is the browser-visible SeaArt Chinese creator-community homepage observed on 2026-09-08. Source artwork, marks, and interface copy belong to their respective owners. Asset capture and verification status are recorded with the specimen delivery.",
+  "license_note": "Independent educational study. Not affiliated with SeaArt. Source assets and identity are attributed to their respective owners. The reusable prompt describes transferable interface decisions for an original product and does not grant rights to source assets.",
+  "validation": {
+    "layout_widths": [
+      320,
+      390,
+      680,
+      768,
+      980,
+      1024,
+      1440
+    ],
+    "responsive_layout": "passed-zero-document-overflow",
+    "frontend_interactions": "passed-browser-smoke",
+    "production_smoke_test": "passed",
+    "pixel_diff": "not-performed",
+    "production_performance_equivalence": "not-measured",
+    "backend": "not-connected",
+    "source_asset_count": 44
+  },
+  "deployment_id": "FBfAodPPjKZ7HmDoVnjLEts5JzSa",
+  "delivery_report": "qa/delivery.md"
+}

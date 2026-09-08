@@ -1,0 +1,267 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/designs/012-seaart-study",
+    "status": 200,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/studies/012-seaart-homepage",
+    "status": 200,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/previews/seaart-study.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "type": "application/xml"
+  },
+  {
+    "path": "/studies/012-seaart/index.html",
+    "status": 200,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/studies/012-seaart/styles.css",
+    "status": 200,
+    "type": "text/css; charset=utf-8"
+  },
+  {
+    "path": "/studies/012-seaart/data.js",
+    "status": 200,
+    "type": "application/javascript; charset=utf-8"
+  },
+  {
+    "path": "/studies/012-seaart/app.js",
+    "status": 200,
+    "type": "application/javascript; charset=utf-8"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-motion.gif",
+    "status": 200,
+    "type": "image/gif"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-qwen-edit.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/create-image.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-minimax-max.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/avatar-seaart-frame.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/contest-reversal.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-personal-video.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/avatar-girl.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gift-banner.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/create-video.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-cake.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-sequencer.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/avatar-seaart.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-cg-ultrahd.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-smooth-video.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-realtime.mp4",
+    "status": 200,
+    "type": "video/mp4"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-cli.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-dg-loop.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-dress-up.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-zimage.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/iconfont-v2.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-realtime.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-snake.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/create-movies.gif",
+    "status": 200,
+    "type": "image/gif"
+  },
+  {
+    "path": "/studies/012-seaart/assets/iconfont.woff2",
+    "status": 200,
+    "type": "font/woff2"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-wan.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-minimax-max.mp4",
+    "status": 200,
+    "type": "video/mp4"
+  },
+  {
+    "path": "/studies/012-seaart/assets/avatar-ame-frame.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/avatar-ame.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/contest-app-play.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/decoration-fairy.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/contest-taste-lab.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/decoration-halloween.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-krea.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/decoration-fire.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-4k-enhance.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-wan.mp4",
+    "status": 200,
+    "type": "video/mp4"
+  },
+  {
+    "path": "/studies/012-seaart/assets/contest-film.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-duo.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-seedream.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/shortcut-bg.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/gallery-beach.webp",
+    "status": 200,
+    "type": "image/webp"
+  },
+  {
+    "path": "/studies/012-seaart/assets/header-logo.png",
+    "status": 200,
+    "type": "image/png"
+  },
+  {
+    "path": "/studies/012-seaart/assets/featured-minimax-open.webp",
+    "status": 200,
+    "type": "image/webp"
+  }
+]

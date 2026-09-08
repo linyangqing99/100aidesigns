@@ -1,0 +1,51 @@
+[
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 312,
+    "overflow": 0,
+    "width": 320
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 382,
+    "overflow": 0,
+    "width": 390
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 672,
+    "overflow": 0,
+    "width": 680
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 760,
+    "overflow": 0,
+    "width": 768
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 972,
+    "overflow": 0,
+    "width": 980
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 1016,
+    "overflow": 0,
+    "width": 1024
+  },
+  {
+    "broken": [],
+    "cards": 12,
+    "documentWidth": 1432,
+    "overflow": 0,
+    "width": 1440
+  }
+]
