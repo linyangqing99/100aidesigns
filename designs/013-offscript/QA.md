@@ -31,3 +31,15 @@ Checked locally on 2026-09-11. Final preview serves the Vite production build at
 - This is a fictional studio with original generated images, not a portfolio of manufactured objects, built spaces or real client work.
 - No generated video, backend, account, email submission, analytics or payment was included in the standalone specimen. Collection integration and deployment are tracked separately below.
 - The source article was accessible through technique 6; technique 7's body was unavailable behind a subscription boundary.
+
+## Collection release acceptance — 2026-09-12
+
+- Isolated release checkout starts at committed case 012 (`b406b28`), matching the existing production specimen, rather than replacing it with the older main branch.
+- `npm test`: 9 passing tests, including all released case pages and deployment-path checks for the generated specimen script, stylesheet and hero preload.
+- `npm run lint`: passed without warnings after excluding the generated bundle.
+- `npm run build:vercel`: Next production build passed. Both build targets run `scripts/build-offscript.mjs`; generated output is not committed.
+- Local Next production server: case page and specimen return 200. Case canonical URL is `https://100ai.design/designs/013-offscript`. Existing SeaArt specimen also returns 200.
+- Browser: case at 1440 and 390 px has no horizontal overflow; screenshot preview loads. Specimen at its friendly rewrite loads all three images and the local DM Sans font, with no observed HTTP failures. Project switching and mobile navigation into the brief work.
+- Downloaded and read back `offscript-creative-brief.md` from the packaged specimen. Name, idea, medium and feeling match the supplied inputs.
+- Independent code review found no critical or important issues. Resolved the showcase's semantic color/border references against the tokens actually defined in this checkout; no independent visual score or blind prompt reproduction is claimed.
+- Public release target: `https://100ai.design/designs/013-offscript` and `https://100ai.design/studies/013-offscript-studio`. External deployment identity and browser readback will be saved in `evidence/production-verification.json` after release.

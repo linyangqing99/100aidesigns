@@ -405,8 +405,8 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
 .preview-offscript { color: #20211e; background: #eeefed url("/previews/offscript.webp") center/cover; }
 .preview-offscript .preview-title, .preview-offscript .preview-ui { display: none; }
 .preview-offscript .design-number { padding: 4px; background: #eeefed; }
-.offscript-showcase { display: block; align-self: center; min-width: 0; margin-left: 14px; border: 1px solid var(--border-strong); color: var(--text-primary); text-decoration: none; }
+.offscript-showcase { display: block; align-self: center; min-width: 0; margin-left: 14px; border: var(--rule); color: var(--ink); text-decoration: none; }
 .offscript-showcase img { display: block; width: 100%; height: auto; aspect-ratio: 1440/1000; }
-.offscript-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; border-top: 1px solid var(--border-strong); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
-.offscript-showcase:hover > span { color: var(--accent-editorial); }
+.offscript-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; border-top: var(--rule); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
+.offscript-showcase:hover > span { color: var(--blue); }
 @media (max-width: 980px) { .detail-hero .offscript-showcase { margin: 14px 0 0; } }
