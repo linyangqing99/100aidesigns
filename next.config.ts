@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async rewrites() {
     return [{
+      source: "/studies/013-offscript-studio",
+      destination: "/studies/013-offscript/index.html",
+    }, {
       source: "/studies/012-seaart-homepage",
       destination: "/studies/012-seaart/index.html",
     }, {

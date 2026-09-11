@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "generatedOn": "2026-09-11",
+  "assets": [
+    {
+      "name": "hero",
+      "prompt": "Use case: stylized-concept. Asset type: website hero, wide landscape 3:2. Create an extraordinary studio photograph of one large sculptural ribbon folded into an impossible undulating hollow loop, thick translucent vivid tangerine-orange cast resin with beautifully ribbed fine longitudinal striations, like a pleated paper strip made of luminous acrylic. Its broad ribbon weaves up, folds and returns with one large arched opening. The sculptural object fills the central two-thirds of the frame, sitting on a matte very pale cool gray studio floor with a seamless light gray backdrop. Slightly elevated camera from front at three-quarter angle, art direction for an experimental design studio, tactile material realism, beautiful refractions, strong soft daylight from upper left, precise contact shadow, very subtle film grain. High-end collectible design photography, surprising yet physically credible, striking silhouette, no other objects, no props. Full object visible with ample margin. No lettering, text, logo, watermark, UI, borders or color gradients as decoration.",
+      "output": "site/public/art/soft-signal.webp"
+    },
+    {
+      "name": "chair",
+      "prompt": "Use case: product-mockup. Asset type: experimental furniture portfolio photograph, landscape 4:3. An architectural chair made from a single continuous folded sheet of highly polished brushed aluminum, elegant cantilever design with a gently curved backrest and chunky reflective tubular supporting loop. Center composition in a cool light gray cyclorama studio, beautifully crafted tactile brushed-metal grain, one sharp warm orange reflection along its side and floor from off-screen colored light. Sculptural collectible furniture art direction, very refined form, extremely realistic high-end studio photography, full chair visible, plenty of pale gray space. Camera at seated height three-quarter angle, soft large window illumination. No text, people, typography, brand, logos or watermark.",
+      "output": "site/public/art/the-fold.webp"
+    },
+    {
+      "name": "space",
+      "prompt": "Use case: stylized-concept. Asset type: architectural portfolio photograph, landscape 4:3. A tranquil surreal gallery interior in pale cool grey plaster and satin aluminum. One monumental orange translucent circular glass door slightly ajar in a thick rounded portal centered toward the right, warm amber light diffuses through the ribbed orange glass and casts a clean long reflection on a smooth cool grey concrete floor. Architectural photography from human eye level, wide lens, spacious composition, strong geometric proportions, minimal sophisticated contemporary gallery, subtle tactile textures, believable construction, the space feels quiet and intriguing, no furniture, no people, no signage, no text, no UI or watermark.",
+      "output": "site/public/art/somewhere-else.webp"
+    }
+  ]
+}

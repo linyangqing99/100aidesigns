@@ -7,8 +7,9 @@
   },
   "scripts": {
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
-    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
-    "build:vercel": "next build",
+    "build": "npm run build:offscript && WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
+    "build:offscript": "node scripts/build-offscript.mjs",
+    "build:vercel": "npm run build:offscript && next build",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vercel --ignore-pattern 'designs/*/site'",

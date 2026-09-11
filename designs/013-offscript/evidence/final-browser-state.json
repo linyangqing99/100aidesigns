@@ -1,0 +1,29 @@
+{
+  "fonts": [
+    {
+      "family": "DM Sans Variable",
+      "status": "unloaded"
+    },
+    {
+      "family": "DM Sans Variable",
+      "status": "loaded"
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "images": [
+    {
+      "src": "http://127.0.0.1:4193/art/soft-signal.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:4193/art/the-fold.webp",
+      "loaded": true
+    },
+    {
+      "src": "http://127.0.0.1:4193/art/somewhere-else.webp",
+      "loaded": true
+    }
+  ],
+  "title": "OFFSCRIPT | Ideas, off script."
+}

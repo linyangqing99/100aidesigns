@@ -1,0 +1,37 @@
+[
+  {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "h1Height": 140,
+    "h1Font": "134.64px"
+  },
+  {
+    "width": 980,
+    "scrollWidth": 980,
+    "overflow": false,
+    "h1Height": 95,
+    "h1Font": "91.63px"
+  },
+  {
+    "width": 680,
+    "scrollWidth": 680,
+    "overflow": false,
+    "h1Height": 87,
+    "h1Font": "87.04px"
+  },
+  {
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "h1Height": 116,
+    "h1Font": "58px"
+  },
+  {
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "h1Height": 110,
+    "h1Font": "55px"
+  }
+]

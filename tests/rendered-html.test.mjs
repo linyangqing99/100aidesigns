@@ -22,10 +22,11 @@ test("home and all released design details render the collection shell", async (
     render("/designs/003-granola-study"),
     render("/designs/011-forgegui-study"),
     render("/designs/012-seaart-study"),
+    render("/designs/013-offscript"),
   ]);
   for (const response of responses) assert.equal(response.status, 200);
-  const [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy] = await Promise.all(responses.map((response) => response.text()));
-  for (const html of [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy]) {
+  const [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy, offscript] = await Promise.all(responses.map((response) => response.text()));
+  for (const html of [home, lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy, offscript]) {
     assert.match(html, /100 AI Designs home/);
     assert.match(html, /GITHUB/);
     assert.match(html, /Inspired by the discovery model/);
@@ -34,7 +35,7 @@ test("home and all released design details render the collection shell", async (
   assert.match(home, /Tasteprint/);
   assert.match(home, /href="\/designs\/003-granola-study"/);
   assert.match(home, /Granola Homepage Study/);
-  for (const detail of [lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy]) {
+  for (const detail of [lumen, tasteprint, granolaStudy, forgeguiStudy, seaartStudy, offscript]) {
     assert.match(detail, /PRODUCT MODEL/);
     assert.match(detail, /STYLE DNA/);
     assert.match(detail, /SOURCE &amp; PROMPT/);
@@ -56,7 +57,26 @@ test("home and all released design details render the collection shell", async (
   assert.match(seaartStudy, /seaart\.ai\/zhCN/);
   assert.match(home, /href="\/designs\/012-seaart-study"/);
   assert.match(home, /SeaArt Homepage Study/);
-  assert.match(home, /005 \/ 100/);
+  assert.match(home, /006 \/ 100/);
+});
+
+test("013 links the original concept to a deployable specimen with resolvable asset URLs", async () => {
+  const response = await render("/designs/013-offscript");
+  const detail = await response.text();
+  assert.match(detail, /href="\/studies\/013-offscript-studio"/);
+  assert.match(detail, /OFFSCRIPT is fictional/);
+  assert.match(detail, /canonical" href="https:\/\/100ai\.design\/designs\/013-offscript"/);
+  const document = await readFile(new URL("../public/studies/013-offscript/index.html", import.meta.url), "utf8");
+  const references = [...document.matchAll(/(?:src|href)="([^"]+)"/g)].map((match) => match[1]).filter((url) => !url.startsWith("data:"));
+  assert.ok(references.length >= 3, "script, stylesheet and hero preload are included");
+  const publicRoot = new URL("../public/", import.meta.url);
+  for (const reference of references) {
+    const resolved = new URL(reference, "https://100ai.design/studies/013-offscript-studio");
+    assert.ok(resolved.pathname.startsWith("/studies/013-offscript/"), `${reference} must resolve within the packaged case`);
+    await access(new URL(resolved.pathname.slice(1), publicRoot));
+  }
+  await Promise.all(["soft-signal", "the-fold", "somewhere-else"].map((name) => access(new URL(`studies/013-offscript/art/${name}.webp`, publicRoot))));
+  await access(new URL("previews/offscript.webp", publicRoot));
 });
 
 test("012 keeps the attributed Chinese specimen separate from its English collection case", async () => {

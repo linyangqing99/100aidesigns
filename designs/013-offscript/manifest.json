@@ -1,0 +1,23 @@
+{
+  "id": "013",
+  "slug": "013-offscript",
+  "name": "OFFSCRIPT",
+  "status": "live",
+  "family": "Brand Story",
+  "source_type": "article-method-to-original-concept",
+  "source_url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+  "source_access": "Public techniques 1–6; technique 7 body unavailable behind subscription boundary",
+  "source_snapshot_date": "2026-09-11",
+  "skill": "ai-design-direction",
+  "specimen_path": "/studies/013-offscript-studio",
+  "detail_path": "/designs/013-offscript",
+  "live_url": "https://100ai.design/studies/013-offscript-studio",
+  "preview_path": "public/previews/offscript.webp",
+  "implementation_path": "designs/013-offscript/site",
+  "packaged_path": "public/studies/013-offscript/",
+  "prompt_status": "documented-not-blind-tested",
+  "asset_provenance": "Three original AI-generated fictional concept images",
+  "case_language": "en",
+  "specimen_language": "en",
+  "release_target": "Vercel production on 100ai.design"
+}

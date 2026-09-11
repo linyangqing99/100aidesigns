@@ -399,3 +399,14 @@ a.design-card:hover .design-preview { filter: contrast(1.04) saturate(1.05); }
 .seaart-study-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); padding: var(--space-4); border-top: var(--rule) solid var(--border-strong); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
 .seaart-study-showcase:hover > span { color: var(--accent-editorial); }
 @media (max-width: 980px) { .detail-hero .seaart-study-showcase { margin: var(--space-3) 0 0; } }
+.mosaic-offscript { color: #20211e; background: #eeefed url("/previews/offscript.webp") center/cover; }
+.mosaic-offscript .mosaic-art { display: none; }
+.mosaic-offscript .mosaic-caption { padding: 8px; background: rgba(238,239,237,.94); }
+.preview-offscript { color: #20211e; background: #eeefed url("/previews/offscript.webp") center/cover; }
+.preview-offscript .preview-title, .preview-offscript .preview-ui { display: none; }
+.preview-offscript .design-number { padding: 4px; background: #eeefed; }
+.offscript-showcase { display: block; align-self: center; min-width: 0; margin-left: 14px; border: 1px solid var(--border-strong); color: var(--text-primary); text-decoration: none; }
+.offscript-showcase img { display: block; width: 100%; height: auto; aspect-ratio: 1440/1000; }
+.offscript-showcase > span { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 16px; border-top: 1px solid var(--border-strong); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .08em; }
+.offscript-showcase:hover > span { color: var(--accent-editorial); }
+@media (max-width: 980px) { .detail-hero .offscript-showcase { margin: 14px 0 0; } }
