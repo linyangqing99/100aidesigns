@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-09-11T17:19:40.583Z",
+  "deploymentId": "dpl_HB5wL9WCJ61usCmnc5RAbe2nbewW",
+  "gitCommit": "491e46189a674ec356ae5920b62bc748ecabdf33",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/designs/013-offscript",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/studies/013-offscript-studio",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml"
+    },
+    {
+      "path": "/designs/012-seaart-study",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/studies/012-seaart-homepage",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/studies/011-forgegui-homepage",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/studies/013-offscript/art/soft-signal.webp",
+      "status": 200,
+      "bytes": 189166,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/studies/013-offscript/assets/index-CnlROZVE.js",
+      "status": 200,
+      "bytes": 223397,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "/studies/013-offscript/assets/index-0AmAAL5J.css",
+      "status": 200,
+      "bytes": 12529,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/previews/offscript.webp",
+      "status": 200,
+      "bytes": 113032,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/studies/013-offscript/art/the-fold.webp",
+      "status": 200,
+      "bytes": 60418,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/studies/013-offscript/art/somewhere-else.webp",
+      "status": 200,
+      "bytes": 142214,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/studies/013-offscript/assets/dm-sans-latin-ext-wght-normal-BOFOeGcA.woff2",
+      "status": 200,
+      "bytes": 18228,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "/studies/013-offscript/assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2",
+      "status": 200,
+      "bytes": 36932,
+      "contentType": "font/woff2"
+    }
+  ],
+  "browser": {
+    "url": "https://100ai.design/studies/013-offscript-studio#work",
+    "width": 390,
+    "overflow": false,
+    "theme": "dark",
+    "focus": "Open menu",
+    "images": [
+      {
+        "url": "https://100ai.design/studies/013-offscript/art/soft-signal.webp",
+        "loaded": true
+      },
+      {
+        "url": "https://100ai.design/studies/013-offscript/art/the-fold.webp",
+        "loaded": true
+      },
+      {
+        "url": "https://100ai.design/studies/013-offscript/art/somewhere-else.webp",
+        "loaded": true
+      }
+    ],
+    "failedResources": []
+  },
+  "redirects": {
+    "www": "301 to apex preserving case path",
+    "vercelAlias": "301 to apex preserving case path and query"
+  },
+  "review": "Independent source review: no critical or important findings",
+  "download": {
+    "artifact": "production-brief.md",
+    "readBack": true
+  },
+  "screenshots": [
+    "production-case-desktop.webp",
+    "production-mobile.webp"
+  ]
+}
