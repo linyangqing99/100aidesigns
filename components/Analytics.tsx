@@ -4,7 +4,7 @@ const clarityProjectId =
   process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || "xkt1ed2duv";
 const plausibleScriptUrl =
   process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_URL ||
-  "https://plausible.io/js/pa-UKHPOgtl5DpjdFoJV1-4s.js";
+  "https://stats.linyangqing.com/js/pa-LSIxelSU2330_h70n_4Yn.js";
 
 export function Analytics() {
   return (

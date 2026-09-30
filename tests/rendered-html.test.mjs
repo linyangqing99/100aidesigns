@@ -275,7 +275,7 @@ test("analytics, canonical origin, and normative shell contract remain intact", 
     readFile(new URL("../docs/UI-SYSTEM.md", import.meta.url), "utf8"),
   ]);
   assert.match(chrome, /INDEX ↓/);
-  assert.match(analytics, /plausible\.io\/js\/pa-UKHPOgtl5DpjdFoJV1-4s\.js/);
+  assert.match(analytics, /stats\.linyangqing\.com\/js\/pa-LSIxelSU2330_h70n_4Yn\.js/);
   assert.match(analytics, /G-J1NT8LJ9JQ/);
   assert.match(analytics, /xkt1ed2duv/);
   assert.match(layout, /https:\/\/100ai\.design/);
